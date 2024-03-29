@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACCOUNTS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+  <header>
+    <div class="title">BLAUSTOCKS</div>
+<div class="logo">
+  <img src="logo.JPG" alt="logo">
+</div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">TRADE</a></li>
+      <li><a href="account.html">ACCOUNTS</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <!-- <li><a href="#">Contact</a></li> -->
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Account List</h2>
+          <table class="table table-bordered" id="accountListTable">
+            <!-- Account list content will be generated dynamically -->
+          </table>
+        </div>
+        <div class="col-md-8">
+  <h2>Current Account</h2>
+  <p>Account Name: <span id="currentAccountName">-</span></p>
+  <p>Status: <span id="currentAccountStatus">-</span></p>
+  <div>
+    <!-- Add IDs to the buttons for event handling -->
+    <button id="activateBtn" class="btn btn-primary">Activate</button>
+    <button id="deactivateBtn" class="btn btn-danger">Deactivate</button>
+    <button id="primaryBtn" class="btn btn-success">Make Primary</button>
+    <!-- <button id="deleteBtn" class="btn btn-warning">Delete</button> -->
+  </div>
+  <div>
+    <input type="text" id="apiInput" placeholder="API Key">
+    <input type="text" id="apiSecretInput" placeholder="API Secret">
+    <input type="text" id="accountNameInput" placeholder="Account Name">
+    <button id="addAccountBtn" class="btn btn-primary">Add Account</button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container text-center py-3">
+      <p>&copy; 2024 BLAUPLUG. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts/dashh.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <div class="title">BLAUSTOCKS</div>
+        <div class="logo">
+          <img src="logo.JPG" alt="logo">
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">TRADE</a></li>
+          <li><a href="account.html">ACCOUNTS</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+          <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+  <div class="container">
+    <div class="user-list">
+      <h2>User List</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td onclick="selectUser('John Doe')">John Doe</td>
+        </tr>
+        <tr>
+          <td onclick="selectUser('Jane Smith')">Jane Smith</td>
+        </tr>
+        <!-- Add more user rows as needed -->
+      </table>
+    </div>
+    <div class="current-user">
+      <h2>Current User</h2>
+      <div id="selectedUser"></div>
+      <div class="user-details">
+        <label for="username">Username:</label>
+        <input type="text" id="username" readonly>
+        <label for="password">Password:</label>
+        <input type="text" id="password" readonly>
+        <label for="role">Role:</label>
+        <input type="text" id="role" readonly>
+      </div>
+      <div class="action-buttons">
+        <button onclick="editUser()">Edit</button>
+        <button onclick="deleteUser()">Delete</button>
+        <button onclick="addUser()">Add</button>
+        <button onclick="addUser()">save</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-center py-3">
+      <p>&copy; 2024 BLAUPLUG. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="scripts/profile.js"></script>
+</body>
+</html>

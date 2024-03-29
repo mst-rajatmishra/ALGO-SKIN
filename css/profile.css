@@ -1,0 +1,128 @@
+/* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    /* Add your logo styling here */
+  }
+  
+  nav {
+    background-color: #333;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  
+  .container {
+    display: flex;
+  }
+  
+  .user-list {
+    flex: 1;
+    padding-left: 100px;
+    margin-right: 20px;
+  }
+  
+  .user-list h2 {
+    margin-bottom: 10px;
+    
+  }
+  
+  .user-list table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .user-list th, .user-list td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .user-list td:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .current-user {
+    flex: 2;
+  }
+  
+  .current-user h2 {
+    margin-bottom: 10px;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .user-details label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-details input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
+}
